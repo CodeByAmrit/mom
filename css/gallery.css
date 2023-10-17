@@ -2,6 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: #FBF2EC;
+    
   }
   
   .gallery-item {
@@ -15,6 +17,10 @@
     border: 5px solid #fff;
   }
 
+
+  *{
+    font-family: 'Calibri';
+  }
   
   
   

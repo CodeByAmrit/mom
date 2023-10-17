@@ -25,22 +25,47 @@
         </div>
         <div >
             <ul class="menu-list floating">
-                <a href="#"><li>ABOUT US</li></a>
-                <a href="#"><li>MENU</li></a>
+                <a href="aboutus.html"><li>ABOUT US</li></a>
+                <a href="menu.php"><li>MENU</li></a>
                 <a href="#"><li>ROOM</li></a>
                 <a href="#"><li>WHY US</li></a>
                 <a href="gallery.html"><li>GALLERY</li></a>
-                <a href="#"><li>BLOG</li></a>
-                <a href="#"><li>CONTACT US</li></a>
+                <a href="contactus.html"><li>CONTACT US</li></a>
+                <a type="button" class="login-Btn" onclick="showDivLogin()">Login</a>
             </ul>
         </div>        
     </div>
     <div class="slogan">
         <p style="width: 400px;">Where every flavor tells a story.</p>
         <p style="font-size: 35px; font-weight: 200;">Flavors for royalty.</p>
-        <a href="#"></a><div class="btn-more" onclick="myAudioFunction('a');">
-            <h6>Explore More</h6>
+        <a href="#"></a><div class="btn-more" onclick="showDivSignup()">
+            <h6 >Sign Up</h6>
         </div></a>
+        <a href="#"></a><div class="login" onclick="showDivLogin()">
+            <h6 >or Login</h6>
+        </div></a>
+        <div class="signup-container" id="signup-container" style="display:none;">
+            <h2>Sign Up</h2>
+            <form action="signup_process.php" method="POST">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="username">Email:</label>
+              <input type="text" id="username" name="username" required>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+              <button type="submit" >Create Account</button>
+            </form>
+          </div>
+          <div class="signup-container" id="login-container" style="display:none;">
+            <h2>Login</h2>
+            <form action="login_process.php" method="POST">
+              <label for="username">Email:</label>
+              <input type="text" id="username" name="username" required>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+              <button type="submit" >Login</button>
+            </form>
+          </div>
     </div>
   
     <div class="second">

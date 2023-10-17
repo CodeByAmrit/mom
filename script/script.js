@@ -8,3 +8,11 @@ function myAudioFunction(letter) {
         bAudio.play();
     }
 }
+function showDivSignup() {
+    document.getElementById('login-container').style.display = "none";
+    document.getElementById('signup-container').style.display = "block";
+ }
+function showDivLogin() {
+    document.getElementById('login-container').style.display = "block";
+    document.getElementById('signup-container').style.display = "none";
+ }
