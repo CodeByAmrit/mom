@@ -15,7 +15,7 @@ a {
 
 body {
     width: 100vw;
-    height: 8000px;
+    height: fit-content;
 }
 
 #myVideo {

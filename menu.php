@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Shop Menu</title>
     <link rel="stylesheet" href="styles2.css" />
+    <link rel="icon" href="img/LOGO.ico" type="image/icon type">
   </head>
   <body>
     <div class="container">

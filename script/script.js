@@ -1,12 +1,15 @@
 
-var aAudio = new Audio('sound/click2.mp3');
+// var aAudio = new Audio('sound/click2.mp3');
 var bAudio = new Audio('sound/click3.mp3');
-function myAudioFunction(letter) {
-    if (letter == 'a') {
-        aAudio.play();
-    } else if (letter == 'b') {
+function myAudioFunction() {
+    if (bAudio.duration > 0 && !bAudio.paused){
+
+        bAudio.pause();
+    } else {
+        
         bAudio.play();
     }
+    
 }
 function showDivSignup() {
     document.getElementById('login-container').style.display = "none";
